@@ -26,7 +26,7 @@ public class Guardian {
     @JoinColumn(name = "id_posada", nullable = false, foreignKey = @ForeignKey(name = "FK_posada"))
     private Posada posada;
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "id_persona", nullable = false, foreignKey = @ForeignKey(name = "FK_persona"))
     private Persona persona;
 
